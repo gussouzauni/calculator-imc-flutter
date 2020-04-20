@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: Home(), //Instanciamos uma tela home aqui;
+    home: Home(), 
   ));
 }
 
@@ -31,7 +31,7 @@ class _HomeState extends State<Home> {
   }
 
   void _calculate() {
-    setState(() { //Altera o estado do botão;
+    setState(() {
       double weight = double.parse(weightController.text);
       double height = double.parse(heightController.text) / 100;
       double imc = weight / (height * height);
