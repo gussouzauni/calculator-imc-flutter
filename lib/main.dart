@@ -20,12 +20,12 @@ class _HomeState extends State<Home> {
   String _infoText = "Informe seus dados";
 
   void _resetFields() {
-    // o "underline" significa que o método é privado
+    
     weightController.text = "";
     heightController.text = "";
-    setState(() { //Informa que teve uma alteração no layout.. "Estado do layout"
+    setState(() {
       _infoText = "Informe seus dados";
-      _formKey = GlobalKey < FormState > (); //Reseta o estado da validação do formulário
+      _formKey = GlobalKey < FormState > (); 
     });
 
   }
